@@ -1,95 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio example</title>
-    <script src="https://kit.fontawesome.com/58688fd07e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/58688fd07e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav id="navbar">
-            <ul>
-                <li>
-                    <a href="#welcome-section">About</a>
-                </li>
-                <li>
-                    <a href="#projects">Work</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <section id="welcome-section">
-            <h1>Hey I am Mandeep Singhmar</h1>
-            <p>a web developer</p>
-        </section>
+      <nav id="navbar">
+        <ul>
+          <li>
+            <a href="#welcome-section">Home</a>
+          </li>
+          <li>
+            <a href="#projects">Work</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section id="projects">
-            <h2 id="projects-header">These are some of my projects</h2>
-            <div class="grid">
-            <a href="Tribute-page/" class="project project-tile" target="_blank">
-                <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg" alt="Dr. Norman Borlaug">
-                <p><span class="code"><</span>Tribute Page <span class="code">/></span></p>
-            </a>
-            <!-- </div>
-            <div class="grid"> -->
-            <a href="Survey-form/" target="_blank" class="project">
-                <img src="img/Survey-form.png" alt="Survey-form">
-                <p><span class="code"><</span>Survey Form <span class="code">/></span></p>
-            </a>
-        <!-- </div>
-            <div class="grid"> -->
-            <a href="Product landing page/" target="_blank" class="project">
-                <img src="img/Product landing page.png" alt="Survey-form">
-                <p><span class="code"><</span>Product Landing Page <span class="code">/></span></p>
-            </a>
-        <!-- </div>
-        <div class="grid"> -->
-            <a href="Technical documentation page/" target="_blank" class="project">
-                <img src="img/Technical documentation page.png" alt="Survey-form">
-                <p><span class="code"><</span>Technical Documentation Page<span class="code">/></span></p>
-            </a>
+      <div id="welcome-section">
+        <h1>Hey I am Mandeep Singhmar</h1>
+        <p>a web developer</p>
+      </div>
+
+      <!-- projects-container
+ -->
+      <div class="container" id="projects">
+        <div class="heading-container projects-heading">
+          <h2>👨‍💻 My projects</h2>
+
+          <p>I build website and web apps. Here are some of my works.</p>
         </div>
-        <div>
-            <a class="show-all" target="_blank"
-            href="https://github.com/Mandeepsinghmar?tab=repositories">
-            Show all 
-            <i class="fas fa-chevron-right"></i>
+
+        <div class="projects-container">
+
+          <div class="project">
+
+              <div class="technologies">
+            <span class="technology"> <i class="fab fa-html5"></i></span>
+            <span class="technology"><i class="fab fa-css3-alt"></i></span>
+            <span class="technology"><i class="fab fa-js-square"></i></span>
+              </div>
+
+            <a href="Tribute-page/" target="_blank">
+
+              <div class="project-image">
+                <img class="image"
+                  src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
+                  alt="Dr. Norman Borlaug"
+                />
+              </div>
+
+              <div class="project-text">
+                <div class="project-main-text">
+                  <h3>Tribute Page</h3>
+                  <div class="icon">
+                    <span class="github-icon"><i class="fab fa-github"></i></span>
+                  </div>
+                </div>
+                <p>freecodecamp survey</p>
+              </div>
+
             </a>
-        </div>
-        </section>
-        <section id="contact">
-            <div class="contact-section">
-            <h2>Let's work together...</h2>
-            <p>How do you take your coffee?</p>
-        </div>
-        <div class="contact-links">
-          <a href="#" class="links">
-             <i class="fab fa-facebook"></i> Facebook
+          </div>
+
+
+          <div class="project">
+
+            <div class="technologies">
+          <span class="technology"> <i class="fab fa-html5"></i></span>
+          <span class="technology"><i class="fab fa-css3-alt"></i></span>
+          <span class="technology"><i class="fab fa-js-square"></i></span>
+            </div>
+
+          <a href="Tribute-page/" target="_blank">
+
+            <div class="project-image">
+              <img class="image"
+                src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
+                alt="Dr. Norman Borlaug"
+              />
+            </div>
+
+            <div class="project-text">
+              <div class="project-main-text">
+                <h3>Tribute Page</h3>
+                <div class="icon">
+                  <span class="github-icon"><i class="fab fa-github"></i></span>
+                </div>
+              </div>
+              <p>freecodecamp survey</p>
+            </div>
+
           </a>
-          <a href="https://github.com/Mandeepsinghmar" id="profile-link" target="_blank" class="links">
-            <i class="fab fa-github"></i> Github
-         </a>
-         <a href="#" class="links">
-            <i class="fab fa-twitter"></i> Twitter
-         </a>
-         <a href="mailto:msingh8328@gmail.com" class="links">
-            <i class="fas fa-at"></i> Send a mail
-         </a>
-         <a href="tel:11111-11111" class="links">
-            <i class="fas fa-phone-square-alt"></i> Call me
-         </a>
         </div>
-        </section>
+
+        
+
+        <div class="project">
+
+            <div class="technologies">
+          <span class="technology"> <i class="fab fa-html5"></i></span>
+          <span class="technology"><i class="fab fa-css3-alt"></i></span>
+          <span class="technology"><i class="fab fa-js-square"></i></span>
+            </div>
+
+          <a href="Tribute-page/" target="_blank">
+
+            <div class="project-image">
+              <img class="image"
+                src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
+                alt="Dr. Norman Borlaug"
+              />
+            </div>
+
+            <div class="project-text">
+              <div class="project-main-text">
+                <h3>Tribute Page</h3>
+                <div class="icon">
+                  <span class="github-icon"><i class="fab fa-github"></i></span>
+                </div>
+              </div>
+              <p>freecodecamp survey</p>
+            </div>
+
+          </a>
+        </div>
+
+        
+
+        <div class="project">
+
+            <div class="technologies">
+          <span class="technology"> <i class="fab fa-html5"></i></span>
+          <span class="technology"><i class="fab fa-css3-alt"></i></span>
+          <span class="technology"><i class="fab fa-js-square"></i></span>
+            </div>
+
+          <a href="Tribute-page/" target="_blank">
+
+            <div class="project-image">
+              <img class="image"
+                src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
+                alt="Dr. Norman Borlaug"
+              />
+            </div>
+
+            <div class="project-text">
+              <div class="project-main-text">
+                <h3>Tribute Page</h3>
+                <div class="icon">
+                  <a href ="https://github.com/Mandeepsinghmar/Tribute-page" target="_blank">
+                  <span class="github-icon"><i class="fab fa-github"></i></span>
+                </a>
+                  </div>
+                </div>
+  
+              <p>freecodecamp survey</p>
+            </div>
+
+          </a>
+        </div>
+
+
+          </div>
+</div>
+        
+
+      <!-- end of project container -->
+
+      <!-- start contact container -->
+      <div class="contact-container" id="contact">
+        <div >
+          <h2>🗯 Contact me:</h2>
+
+          <p>I build website and web apps. Here are some of my works.</p>
+        </div>
+
+        <div class="contact-links">
+          <a
+            href="https://www.linkedin.com/in/mandeep-singhmar-7b222117a/"
+            target="_blank"
+            class="links"
+          >
+            <i class="fab fa-linkedin"></i> Linkedin
+          </a>
+          <a
+            href="https://github.com/Mandeepsinghmar"
+            id="profile-link"
+            target="_blank"
+            class="links"
+          >
+            <i class="fab fa-github"></i> Github
+          </a>
+          <a
+            href="https://twitter.com/mandeep_singh_9"
+            target="_blank"
+            class="links"
+          >
+            <i class="fab fa-twitter"></i> Twitter
+          </a>
+          <a
+            href="https://www.instagram.com/themandeepsinghmar/"
+            target="_blank"
+            class="links"
+          >
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+
+          <a href="mailto:msingh8328@gmail.com" class="links">
+            <i class="fas fa-at"></i> Send a mail
+          </a>
+        </div>
+      </div>
+      <!-- end of contact container -->
     </main>
     <footer>
-        <p>© 2020 Mandeep Singhmar. All Right Reserved.</p>
-        <p> Made with <i id="heart" class="fas fa-heart"></i> in India</p>
+      <h4>Made with <i id="heart" class="fas fa-heart"></i> in India</h4>
+      <p>© 2020 Mandeep Singhmar. All Right Reserved.</p>
     </footer>
-</body>
+  </body>
 </html>
