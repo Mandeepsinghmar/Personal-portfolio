@@ -1,0 +1,197 @@
+/* universal or reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::selection{
+   background-color:yellow ;
+}
+/* links css */
+a{
+    text-decoration: none;
+    color: var(--main-text-white);
+}    
+ul{
+    list-style-type: none;
+}
+/* main css */
+:root{
+    --main-text-white:#f0f0f0;
+    --main-red:#be3144;
+    --main-blue:#45567d;
+    --main-gray:#303841;
+}
+body{
+    font-size: 1.5em;
+    line-height: 1.5;
+   font-family: 'Poppins', sans-serif;
+   color: var(--main-text-white);
+}
+
+/* mobile-first approach css */
+#navbar {
+    background-color: var(--main-red);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 70px; */
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    /* gap: 5px; */
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    font-size: 1.3rem;
+}
+#navbar a{
+    padding: 0.8em 1em;
+}
+#navbar a:hover{
+    background-color: var(--main-blue);
+}
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #060626;
+    /* margin: 0 3px; */
+}
+#welcome-section h1{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+#welcome-section p{
+    color:var(--main-red);
+    font-style: italic;
+    font-weight: 200s;
+}
+#projects{
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+   text-align: center;
+   padding:50px 20px;
+}
+#projects-header{
+    border-bottom: 2px solid var(--main-text-white);
+    margin: 0 auto 40px auto;
+    max-width: 650px;
+}
+.grid{
+    display: grid;
+    grid-gap:35px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+.project{
+    background: var(--main-gray);
+    border: 2px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+}
+.project img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: calc(100% - 5.8rem);
+}
+.project p{
+    padding: 15px 5px;
+    font-size: 1.2rem;
+}
+.code{
+   color:red;
+}
+/* .code{
+    color:var(--main-gray);
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-delay: 0s;
+    transition-timing-function: ease-out;
+} */
+.show-all{
+    width:30px ;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color:  #060626;
+    margin: 40px 0 0 0;
+    border-radius: 2px;
+}
+.show-all:hover{
+    background-color: var(--main-red);
+}
+#contact{
+    background-color: var(--main-gray);
+    text-align: center;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-section{
+    margin:30px 0
+}
+.contact-section h2{
+    font-size: 2.2rem;
+}
+.contact-section p{
+    font-size: 1rem;
+    font-style: italic;
+}
+.contact-links{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+    font-size: 1rem;
+}
+.links{
+    gap: 30px;
+    margin: 0.5rem 1.5rem;
+    text-shadow:2px 2px 1px #1f1f1f;
+}
+footer{
+    border-top: 4px solid var(--main-red);
+    background-color: var(--main-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 40px 10px 40px 10px;
+    gap: 15px;
+    font-size: 1rem;
+}
+#heart{
+    color:red;
+}
+
+/* media queries */
+@media screen and (min-width:460px){
+    #navbar ul{
+        justify-content: flex-end;
+    }
+    .contact-section h2{
+        font-size: 3rem;
+    }
+    #projects{
+        padding:80px 30px ;
+    }
+}
+@media screen and (min-width:730px){
+    .grid{
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+}
