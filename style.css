@@ -55,7 +55,7 @@ body{
     padding: 0.8em 1em;
 }
 #navbar a:hover{
-    background-color: var(--main-blue);
+    background-color: var(--main-gray);
 }
 #welcome-section{
     display: flex;
@@ -157,7 +157,6 @@ body{
     margin-bottom: 12px;
     width: 100%;
     line-height: 1.6;
-    word-break: break-all;
 }
 .icon{
     margin-top: 5px;
@@ -225,6 +224,15 @@ footer h4{
     position: relative;
     top:-4px;
 }
-#heart{
-    color#fff;
+
+@media screen and (max-width:475px){
+
+    .projects-container{
+        display: block;
+    }
+    .project{
+        width: 100%;
+        display: block;
+    }
 }
+
