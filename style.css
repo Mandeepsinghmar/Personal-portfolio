@@ -210,8 +210,8 @@ ul{
     border-bottom: 2px solid var(--secondary-color);
     margin: 4rem auto 10px auto;
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 1rem;
+    padding-right:1rem;
     padding-bottom: 0.5rem;
     font-weight: 400;
 }
@@ -250,10 +250,9 @@ ul{
     padding-bottom:20px;
     text-align: center;  
 }
-/* .main-heading:hover{
-    position:relative;
-    left: -4px;
-} */
+.main-heading{
+   font-size: 1.7rem;
+}
 
 .contact-links{
     display: flex;
@@ -285,11 +284,19 @@ footer{
     font-size: 0.7rem;
 }
 footer h4{
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 600;
 }
 
 @media screen and (max-width:475px){
+
+    #welcome-section h1{
+        font-size: 2rem;
+    }
+
+    #welcome-section p{
+        font-size: 1.2rem;
+    }
 
     .projects-container{
         display: block;
@@ -300,3 +307,12 @@ footer h4{
     }
 }
 
+@media screen and (max-width:730px){
+    .project:hover{
+        transform: scale(0.9);
+        transition-property: transform;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0s;
+    }
+}
