@@ -6,7 +6,8 @@
     --secondary-color:#090c14; */
 
     --primary-text-color:#f0f0f0;
-    --secondary-text-color:hsl(223, 15%, 80%);
+    --secondary-text-color:hsl(223, 21%, 80%);;
+    
 
 }
 
@@ -239,7 +240,7 @@ ul{
 }
 .links{
     margin: 0.5rem 1.5rem;
-    text-shadow:2px 2px 1px #1f1f1f;
+    /* text-shadow:2px 2px 1px #1f1f1f; */
 }
 .links:hover{
     position: relative;
