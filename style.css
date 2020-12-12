@@ -83,10 +83,10 @@ ul{
     width: 100%;
     height: 100vh;
     background-color: #000;
-    background-image: url(https://media.giphy.com/media/l0MYK5Nq6eg7PsYaQ/giphy.gif); 
+    /* background-image: url(https://media.giphy.com/media/l0MYK5Nq6eg7PsYaQ/giphy.gif); 
     background-repeat: no-repeat;
     background-position: center;
-    background-size:750px 500px; 
+    background-size:750px 500px;  */
     opacity: 0.8;
     padding: 0 15px;
 }
