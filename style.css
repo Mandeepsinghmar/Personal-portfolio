@@ -69,6 +69,7 @@ ul{
     width: 100%;
     margin-top: 13rem;
     margin-bottom: 5rem;
+    padding: 0 30px;
 }
 #welcome-section h1{
     font-size: 3rem;
@@ -185,7 +186,7 @@ ul{
     color: var(--secondary-text-color);
 }
 
-.skills-icon{
+.skills-container{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
