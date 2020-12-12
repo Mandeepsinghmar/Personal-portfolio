@@ -250,10 +250,10 @@ ul{
     padding-bottom:20px;
     text-align: center;  
 }
-.main-heading:hover{
+/* .main-heading:hover{
     position:relative;
     left: -4px;
-}
+} */
 
 .contact-links{
     display: flex;
