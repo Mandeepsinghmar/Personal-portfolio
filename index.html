@@ -8,11 +8,24 @@
       src="https://kit.fontawesome.com/58688fd07e.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <link rel="stylesheet" href="wow/WOW-master/css/libs/animate.css" type="text/css">
+      <script src="wow/WOW-master/dist/wow.min.js"></script>
+
+
+<script>
+        new WOW().init();
+        </script>
   </head>
   <body>
     <header>
@@ -31,7 +44,7 @@
       </nav>
     </header>
     <main>
-      <div id="welcome-section">
+      <div id="welcome-section" class="animate__animated animate__rollIn animate__delay-0.9s wow rollIn">
         <h1>Hey I am Mandeep Singhmar</h1>
         <p>a front end developer/web developer</p>
       </div>
@@ -39,7 +52,7 @@
       <!-- projects-container
  -->
       <div class="container" id="projects">
-        <div class="heading-container projects-heading">
+        <div class="heading-container projects-heading ">
           <h2>👨‍💻 My projects</h2>
 
           <p>I build websites and web apps. Here are some of my works.</p>
@@ -47,7 +60,7 @@
 
         <div class="projects-container">
 
-          <div class="project">
+          <div class="project animate__animated animate__bounceInLeft animate__delay-0.9s wow bounceInLeft">
 
               <div class="technologies">
             <span class="technology"> <i class="fab fa-html5"></i></span>
@@ -82,7 +95,7 @@
           </div>
 
 
-          <div class="project">
+          <div  class="project animate__animated animate__bounceInRight animate__delay-0.9s wow bounceInRight">
 
             <div class="technologies">
           <span class="technology"> <i class="fab fa-html5"></i></span>
@@ -117,7 +130,7 @@
 
         
 
-        <div class="project">
+        <div  class="project animate__animated animate__bounceInLeft animate__delay-0.9s wow bounceInLeft">
 
             <div class="technologies">
           <span class="technology"> <i class="fab fa-html5"></i></span>
@@ -152,7 +165,7 @@
 
         
 
-        <div class="project">
+        <div  class="project animate__animated animate__bounceInRight animate__delay-0.9s wow bounceInRight">
 
             <div class="technologies">
           <span class="technology"> <i class="fab fa-html5"></i></span>
@@ -194,12 +207,12 @@
 
       <!-- start of skills container -->
 <div class="container-section">
-  <div class="heading-section" >
+  <div class="heading-section animate__animated animate__bounceInLeft animate__delay-0.9s wow bounceInLeft" >
     <h2 class="main-heading">🛠 My skills:</h2>
 
     <p>These are some of my skills.</p>
   </div>
-  <div class="skills-container">
+  <div class="skills-container animate__animated animate__bounceInRight animate__delay-0.9s wow bounceInRight">
 
     <div class="skills">
       <p class="skill-icon"> <i class="fab fa-html5"></i></p>
@@ -239,13 +252,13 @@
 
       <!-- start contact container -->
       <div class="container-section" id="contact">
-        <div class="heading-section">
+        <div class="heading-section animate__animated animate__bounceInRight animate__delay-0.9s wow bounceInRight">
           <h2 class="main-heading">🗯 Connect with me:</h2>
 
           <p>Let's build awesome things together.</p>
         </div>
 
-        <div class="contact-links">
+        <div class="contact-links animate__animated animate__bounceInLeft animate__delay-0.9s wow bounceInLeft">
           <a
             href="https://www.linkedin.com/in/mandeep-singhmar-7b222117a/"
             target="_blank"
@@ -287,5 +300,11 @@
       <h4>Made with <i id="heart" class="fas fa-heart"></i> in India</h4>
       <p>© 2020 Mandeep Singhmar. All Right Reserved.</p>
     </footer>
+
+
+    <!-- <script>
+      new WOW().init();
+      </script> -->
+
   </body>
 </html>
