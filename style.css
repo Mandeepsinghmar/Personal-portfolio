@@ -307,12 +307,3 @@ footer h4{
     }
 }
 
-@media screen and (max-width:730px){
-    .project:hover{
-        transform: scale(0.9);
-        transition-property: transform;
-        transition-duration: 0.2s;
-        transition-timing-function: ease-in-out;
-        transition-delay: 0s;
-    }
-}
