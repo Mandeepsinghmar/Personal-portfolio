@@ -1,8 +1,13 @@
 :root{
-    --primary-color:#303841;
-    --secondary-color:#363D4E;
+    --primary-color:#222734; 
+    --secondary-color:#1D253A; 
+
+    /* --primary-color:#000; 
+    --secondary-color:#090c14; */
+
     --primary-text-color:#f0f0f0;
     --secondary-text-color:hsl(223, 15%, 80%);
+
 }
 
 /* universal or reset css */
@@ -53,6 +58,7 @@ ul{
     padding: 15px;
     font-size: 1.3rem;
     font-weight: bold;
+    color: #000;
 }
 #navbar a{
     padding: 0.8em 1em;
@@ -69,7 +75,7 @@ ul{
     width: 100%;
     margin-top: 13rem;
     margin-bottom: 5rem;
-    padding: 0 30px;
+    padding: 0 10px;
 }
 #welcome-section h1{
     font-size: 3rem;
@@ -88,7 +94,7 @@ ul{
 }
 
 .heading-container{
-    border-bottom: 2px solid var(--secondary-text-color);
+    border-bottom: 2px solid var(--secondary-color);
     margin: 4rem auto 40px auto;
     text-align: center;
     padding-bottom: 0.5rem;
@@ -116,7 +122,9 @@ ul{
     overflow: hidden;
     box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5); 
 }
-
+.project a{
+    cursor:default;
+}
 .project-image{
     border-radius: 2px;
     width: 100%;
@@ -127,6 +135,7 @@ ul{
 .project-image img{
     width: 100%;
     object-fit: cover;
+    cursor: default;
 }
 
 .technologies{
@@ -146,7 +155,9 @@ ul{
      margin-bottom: 18px;
     font-size: 18px;
 }
-
+.project-text h3{
+    cursor: pointer;
+}
 .project-text p{
     font-size: 14px;
     font-weight: normal;
@@ -176,7 +187,7 @@ ul{
     align-items:center;
 }
 .heading-section{
-    border-bottom: 2px solid var(--secondary-text-color);
+    border-bottom: 2px solid var(--secondary-color);
     margin: 4rem auto 10px auto;
     text-align: center;
     padding-bottom: 0.5rem;
@@ -200,6 +211,10 @@ ul{
     justify-content: center;
     align-items: center;
 }
+.skill-icon:hover{
+    position: relative;
+    top:-3px;
+}
 .skill{
     padding:0 10px;
     text-transform: uppercase;
@@ -210,9 +225,9 @@ ul{
     padding-bottom:20px;
     text-align: center;  
 }
-.contact:hover{
+.main-heading:hover{
     position:relative;
-    top: -4px;
+    left: -4px;
 }
 
 .contact-links{
@@ -229,11 +244,12 @@ ul{
 .links:hover{
     position: relative;
     top:-4px;
+    color: var(--primary-text-color);
 }
 
 
 footer{
-    border-top: 3px solid var(--secondary-text-color);
+    border-top: 2px solid var(--secondary-color);
     background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
@@ -242,7 +258,7 @@ footer{
     text-align: center;
     padding: 20px 10px 15px 10px;
    margin-top: 1rem;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 footer h4{
     font-size: 1rem;
