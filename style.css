@@ -60,7 +60,7 @@ ul{
     flex-direction: row;
     justify-content:center;
     margin: auto;
-    max-width: 680px;
+    /* max-width: 680px; */
     align-items: center;
     padding: 15px;
     font-size: 1.3rem;
@@ -74,35 +74,49 @@ ul{
 #navbar a:hover{
     background-color: var(--primary-color);
 }
-#welcome-section{
+.welcome-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 88vh;
+    height: 101vh;
     /* margin-top: 70px; */
     /* background-color: #000; */
-    /* background-image: url(https://media.giphy.com/media/l0MYK5Nq6eg7PsYaQ/giphy.gif); 
+    background-image:linear-gradient(120deg, #000000bb, #000000e8),url(https://images.pexels.com/photos/92904/pexels-photo-92904.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500); 
     background-repeat: no-repeat;
-    background-position: center;
-    background-size:750px 500px;  */
+    background-position:center;
+    background-size:cover; 
+    background-attachment: fixed;
     /* opacity: 0.8; */
     padding: 0 15px;
 }
-#welcome-section h1{
+
+.welcome-section img{
+    border-radius:20%;
+    object-fit: cover;
+    height: auto;
+    margin-bottom: 20px;
+   width:100%;
+   max-width:25rem;
+   margin-right:5rem;
+   background-color: white;
+}
+.welcome-section h1{
     font-size: 3rem;
     font-weight: 700;
     text-align: center;
+    margin-bottom: 15px;
 }
-#welcome-section p{
+.welcome-section p{
+    z-index: 10;
     color: var(--secondary-text-color);
     font-style: italic;
     font-weight: 200s;
 }
 .container{
-   max-width: 680px;
+   max-width: 900px;
    margin: auto;
    padding:12px 14px 0px 14px;
 }
@@ -205,6 +219,7 @@ ul{
     flex-direction:column;
     justify-content: center;
     align-items:center;
+
 }
 .heading-section{
     border-bottom: 2px solid var(--secondary-color);
@@ -290,11 +305,11 @@ footer h4{
 
 @media screen and (max-width:475px){
 
-    #welcome-section h1{
+    .welcome-section h1{
         font-size: 2rem;
     }
 
-    #welcome-section p{
+    .welcome-section p{
         font-size: 1.2rem;
     }
 
@@ -307,3 +322,15 @@ footer h4{
     }
 }
 
+
+@media screen and (min-width:700px){
+
+    .main-heading{
+        font-size: 3rem;
+     }
+     .heading-section p{
+         font-size: 1.3rem;
+     }
+
+
+}
