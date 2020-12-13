@@ -84,7 +84,8 @@ ul{
     height: 101vh;
     /* margin-top: 70px; */
     /* background-color: #000; */
-    background-image:linear-gradient(120deg, #000000bb, #000000e8),url(https://images.pexels.com/photos/92904/pexels-photo-92904.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500); 
+    /* background-image:linear-gradient(120deg, #000000bb, #000000e8),url(https://images.pexels.com/photos/92904/pexels-photo-92904.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);  */
+    background-image:linear-gradient( 120deg,#000000bb, #000000e8), url(https://media.giphy.com/media/3YKEA2gTCbZMoMWbKk/giphy.gif);
     background-repeat: no-repeat;
     background-position:center;
     background-size:cover; 
@@ -110,7 +111,7 @@ ul{
     margin-bottom: 15px;
 }
 .welcome-section p{
-    z-index: 10;
+
     color: var(--secondary-text-color);
     font-style: italic;
     font-weight: 200s;
@@ -303,12 +304,12 @@ footer{
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    padding: 20px 10px 15px 10px;
+    padding: 30px 10px 30px 10px;
    margin-top: 4rem;
     font-size: 0.7rem;
 }
 footer h4{
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
