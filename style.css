@@ -150,12 +150,18 @@ ul{
     overflow: hidden;
     box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5); 
 }
-.project:hover{
+.project-image:hover{
     transform: scale(1.1);
     transition-property: transform;
     transition-duration: 0.2s;
     transition-timing-function: ease;
     transition-delay: 0s;
+
+}
+
+.project:hover{
+    position: relative;
+    top: -6px;
 }
 .project a{
     cursor:default;
@@ -166,6 +172,9 @@ ul{
     padding-bottom:55%;
     height: 0;
     overflow:hidden;
+   padding-left: 10px;
+   padding-right: 10px;
+
 }
 .project-image img{
     width: 100%;
