@@ -91,6 +91,7 @@ ul {
   border-radius: 50%;
   max-width: 280px;
   margin: 0;
+  /* opacity: 1; */
 }
 
 .welcome h1 {
@@ -119,10 +120,10 @@ ul {
 }
 
 .welcome-description .email {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-top: 40px;
   border: 2px solid white;
-  padding: 0.4rem 1rem;
+  padding: 0.6rem 1.2rem;
   background-color: #000;
   color: var(--secondary-text-color);
   border-radius: 3px;
