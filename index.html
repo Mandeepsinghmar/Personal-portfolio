@@ -4,345 +4,313 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | Mandeep Portfolio</title>
-  <link rel="icon" href="img/favicon.ico" type="image/gif" sizes="16x16">
-  <script src="https://kit.fontawesome.com/58688fd07e.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="style.css" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- =====BOX ICONS===== -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
 
-  <link rel="stylesheet" href="wow/WOW-master/css/libs/animate.css" type="text/css">
-  <script src="wow/WOW-master/dist/wow.min.js"></script>
-
-
-  <script>
-    new WOW().init();
-  </script>
+  <title>Portfolio | Mandeep Singhmar</title>
 </head>
 
 <body>
-  <header id="home">
-    <nav id="navbar">
-      <ul class="animate__animated animate__fadeInLeft animate__delay-0.5s wow fadeInLeft">
-        <li>
-          <a href="#home">Home</a>
-        </li>
-        <li>
-          <a href="#projects">Work</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
+  <!--===== HEADER =====-->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="#" class="nav__logo">React-Dev</a>
+      </div>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">Work</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
     </nav>
   </header>
-  <main>
-    <div class="welcome-section">
-      <div class="welcome animate__animated animate__animate__fadeInLeft animate__delay-0.9s wow animate__fadeInLeft">
-        <img class="welcome-img" src=" img/mandeep-img1.png" alt="mandeep image">
-        <h1>Mandeep Singhmar</h1>
-      </div>
-      <div
-        class="welcome-description animate__animated animate__animate__fadeInRight animate__delay-0.9s wow animate__fadeInRight">
-        <p>I'm a Front End Developer with experience building web applications and modern websites. I have a passion for
-          making websites that are as simple and easy to use as possible, without taking away from their functionality.
-        </p>
-        <a href="mailto:msingh8328@gmail.com" class="email">
-          EMAIL ME
-        </a>
-      </div>
-    </div>
 
-    <!-- projects-container
- -->
-    <div class="container" id="projects">
-      <div
-        class="heading-container projects-heading animate__animated animate__fadeInUp animate__delay-0.9s wow fadeInUp ">
-        <h2>👨‍💻 My projects</h2>
+  <main class="l-main">
+    <!--===== HOME =====-->
+    <section class="home bd-grid" id="home">
+      <div class="home__data">
+        <h1 class="home__title">
+          Hi,<br />I'm <span class="home__title-color">Pranav Bakale</span><br />
+          Fullstack Web Developer
+        </h1>
 
-        <p>I build websites and web apps. Here are some of my works.</p>
+        <a href="#contact" class="button">Contact</a>
       </div>
 
-      <div class="projects-container">
+      <div class="home__social">
+        <a href="https://www.linkedin.com/in/pranav-bakale-27bab9193/" class="home__social-icon"><i
+            class="bx bxl-linkedin"></i></a>
+        <a href="https://twitter.com/Pranavbakale" class="home__social-icon"><i class="bx bxl-twitter"></i></a>
+        <a href="https://github.com/pranav589" class="home__social-icon"><i class="bx bxl-github"></i></a>
+      </div>
+    </section>
 
+    <!--===== ABOUT =====-->
+    <section class="about section" id="about">
+      <h2 class="section-title">About</h2>
 
-        <!-- covid application -->
+      <div class="about__container bd-grid">
+        <div class="about__img">
+          <img src="img/mandeep-img1.png" alt="" />
+        </div>
 
-        <div class="project animate__animated animate__fadeIn animate__delay-0.9s wow fadeIn">
+        <div>
+          <h2 class="about__subtitle">I'am Pranav</h2>
+          <p class="about__text">
+            I am a Fullstack Web Developer from Nashik, Maharshtra. I have
+            serious passion for UI development and programming.I am more
+            centered towards frontend but can work with backend as well.
+          </p>
+        </div>
+      </div>
+    </section>
 
-          <div class="technologies">
-            <span class="technology"> <i class="fab fa-html5"></i></span>
-            <span class="technology"><i class="fab fa-css3-alt"></i></span>
-            <span class="technology"><i class="fab fa-js-square"></i></span>
-            <span class="technology"><i class="fab fa-react"></i></span>
+    <!--===== SKILLS =====-->
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills__container bd-grid">
+        <div>
+          <h2 class="skills__subtitle">Profesional Skills</h2>
+          <p class="skills__text">
+            I've worked with the following technologies.
+          </p>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-react skills__icon"></i>
+              <span class="skills__name">React JS</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-nodejs skills__icon"></i>
+              <span class="skills__name">Express JS</span>
+            </div>
           </div>
 
-          <a href="https://covid-tracker-mandeep.netlify.app/" target="_blank">
-
-            <div class="project-image">
-              <img class="image" src="img/covidTracker.png" alt="covid tracker" />
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-javascript skills__icon"></i>
+              <span class="skills__name">Vanilla Javascript</span>
             </div>
-
-            <div class="project-text">
-              <div class="project-main-text">
-                <h3>Covid Tracker</h3>
-                <div class="icon">
-                  <a href="https://github.com/Mandeepsinghmar/covid-19-tracker" target="_blank">
-                    <span class="github-icon"><i class="fab fa-github"></i></span>
-                  </a>
-                </div>
-              </div>
-              <p>A covid tracker web app made with react and material-ui. Here you can track the coronavirus cases
-                of all countries.</p>
-            </div>
-
-          </a>
-        </div>
-
-        <!-- Todo application  -->
-
-        <div class="project animate__animated animate__fadeIn animate__delay-0.9s wow fadeIn">
-
-          <div class="technologies">
-            <span class="technology"> <i class="fab fa-html5"></i></span>
-            <span class="technology"><i class="fab fa-css3-alt"></i></span>
-            <span class="technology"><i class="fab fa-js-square"></i></span>
-
           </div>
-
-          <a href="https://todo-list-mandeep.netlify.app/" target="_blank">
-
-            <div class="project-image">
-              <img class="image" src="img/Todo.png" alt="symbol-interpreter" />
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-nodejs skills__icon"></i>
+              <span class="skills__name">Node JS</span>
             </div>
-
-            <div class="project-text">
-              <div class="project-main-text">
-                <h3>Todoist app</h3>
-                <div class="icon">
-
-                  <a href="https://github.com/Mandeepsinghmar/todo" target="_blank">
-                    <span class="github-icon"><i class="fab fa-github"></i></span>
-                  </a>
-                </div>
-              </div>
-              <p>This is a todo app where you can add, delete and search todo items. I made this todo app using html,
-                css and javascript.
-
-              </p>
-            </div>
-
-          </a>
-        </div>
-
-        <!-- Pizza application  -->
-
-        <div class="project animate__animated animate__fadeIn animate__delay-0.9s wow fadeIn">
-
-          <div class="technologies">
-            <span class="technology"> <i class="fab fa-html5"></i></span>
-            <span class="technology"><i class="fab fa-css3-alt"></i></span>
-            <span class="technology"><i class="fab fa-js-square"></i></span>
-            <span class="technology"><i class="fab fa-react"></i></span>
           </div>
-
-          <a href="https://mandeepsinghmar.github.io/pizza-app/" target="_blank">
-
-            <div class="project-image">
-              <img class="image" src="img/Subway.png" alt="symbol-interpreter" />
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxs-data skills__icon"></i>
+              <span class="skills__name">MongoDB</span>
             </div>
-
-            <div class="project-text">
-              <div class="project-main-text">
-                <h3>Subway app</h3>
-                <div class="icon">
-
-                  <a href="https://github.com/Mandeepsinghmar/pizza-app" target="_blank">
-                    <span class="github-icon"><i class="fab fa-github"></i></span>
-                  </a>
-                </div>
-              </div>
-              <p>This is a react based app styled using styled-components which showcasing fast food products.</p>
-            </div>
-
-          </a>
-        </div>
-
-        <!-- symbol-interpreter -->
-
-        <div class="project animate__animated animate__fadeIn animate__delay-0.9s wow fadeIn">
-
-          <div class="technologies">
-            <span class="technology"> <i class="fab fa-html5"></i></span>
-            <span class="technology"><i class="fab fa-css3-alt"></i></span>
-            <span class="technology"><i class="fab fa-js-square"></i></span>
-            <span class="technology"><i class="fab fa-react"></i></span>
           </div>
-
-          <a href="https://csb-oj9mo.netlify.app/" target="_blank">
-
-            <div class="project-image">
-              <img class="image" src="img/symbol-interpreter.png" alt="symbol-interpreter" />
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-html5 skills__icon"></i>
+              <span class="skills__name">HTML & CSS</span>
             </div>
-
-            <div class="project-text">
-              <div class="project-main-text">
-                <h3>Symbol Interpreter</h3>
-                <div class="icon">
-
-                  <a href="https://github.com/Mandeepsinghmar/symbol-interpreted" target="_blank">
-                    <span class="github-icon"><i class="fab fa-github"></i></span>
-                  </a>
-                </div>
-              </div>
-              <p>A react app Home of Symbol Meanings, where you can search the meaning of symbols.</p>
-            </div>
-
-          </a>
-        </div>
-
-        <!-- cosmo junkies -->
-
-        <div class="project animate__animated animate__fadeIn animate__delay-0.9s wow fadeIn">
-
-          <div class="technologies">
-            <span class="technology"> <i class="fab fa-html5"></i></span>
-            <span class="technology"><i class="fab fa-css3-alt"></i></span>
-
           </div>
-
-          <a href="https://cosmo-junkies.netlify.app/" target="_blank">
-
-            <div class="project-image">
-              <img class="image" src="img/cosmo-junkie.png" alt="Cosmo junkie" />
-            </div>
-
-            <div class="project-text">
-              <div class="project-main-text">
-                <h3>Cosmo Junkie</h3>
-                <div class="icon">
-                  <a href="https://github.com/Mandeepsinghmar/Cosmo-junkie/tree/master" target="_blank">
-                    <span class="github-icon"><i class="fab fa-github"></i></span>
-                  </a>
-                </div>
-              </div>
-              <p>This is a portfolio website of a Space Enthuasist
-                & Developer.</p>
-            </div>
-
-          </a>
         </div>
+        <div>
+          <img src="assets/img/work3.jpg" alt="" class="skills__img" />
+        </div>
+      </div>
+    </section>
 
-        <!-- product landing page -->
+    <!--===== WORK =====-->
+    <section class="work section" id="work">
+      <h2 class="section-title">Work</h2>
 
-        <div class="project animate__animated animate__fadeIn animate__delay-0.9s wow fadeIn">
+      <div class="work__container bd-grid">
+        <div class="work__img">
+          <img src="assets/img/amazon.png" alt="" />
 
-          <div class="technologies">
-            <span class="technology"> <i class="fab fa-html5"></i></span>
-            <span class="technology"><i class="fab fa-css3-alt"></i></span>
-
+          <div class="work__links" style="
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+                align-items: center;
+              ">
+            <p style="padding: 5px; color: #4070f4">Fullstack Amazon Clone</p>
+            <a href="https://amazon-web-application.herokuapp.com/" style="
+                  text-decoration: none;
+                  color: #4070f4;
+                  font-weight: 600;
+                  padding: 3px;
+                  border: 1px solid #4070f4;
+                  width: 100%;
+                  text-align: center;
+                  margin-bottom: 2px;
+                ">Live</a>
+            <a href="https://github.com/pranav589/amazon-clone.git" style="
+                  text-decoration: none;
+                  color: #4070f4;
+                  font-weight: 600;
+                  padding: 3px;
+                  width: 100%;
+                  text-align: center;
+                  border: 1px solid #4070f4;
+                ">Github</a>
           </div>
-
-          <a href="https://product-landingpage-mandeep.netlify.app/" target="_blank">
-
-            <div class="project-image">
-              <img class="image" src="img/Product landing page.png" alt="Product landing page" />
-            </div>
-
-            <div class="project-text">
-              <div class="project-main-text">
-                <h3>Original Trombones</h3>
-                <div class="icon">
-                  <a href="https://github.com/Mandeepsinghmar/Product-landing-page" target="_blank">
-                    <span class="github-icon"><i class="fab fa-github"></i></span>
-                  </a>
-                </div>
-              </div>
-
-              <p>A product landing page.</p>
-            </div>
-
-          </a>
         </div>
 
+        <div class="work__img">
+          <img src="assets/img/quora.png" alt="" />
 
+          <div class="work__links" style="
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+                align-items: center;
+              ">
+            <p style="padding: 5px; color: #4070f4">
+              Quora Clone with Firebase
+            </p>
+            <a href="https://quora-527b9.firebaseapp.com/" style="
+                  text-decoration: none;
+                  color: #4070f4;
+                  font-weight: 600;
+                  padding: 3px;
+                  border: 1px solid #4070f4;
+                  width: 100%;
+                  text-align: center;
+                  margin-bottom: 2px;
+                ">Live</a>
+            <a href="https://github.com/pranav589/Quora-Clone" style="
+                  text-decoration: none;
+                  color: #4070f4;
+                  font-weight: 600;
+                  padding: 3px;
+                  width: 100%;
+                  text-align: center;
+                  border: 1px solid #4070f4;
+                ">Github</a>
+          </div>
+        </div>
 
+        <div class="work__img">
+          <img src="assets/img/notify.png" alt="" />
+
+          <div class="work__links" style="
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+                align-items: center;
+              ">
+            <p style="padding: 5px; color: #4070f4">MERN-Stack Notes App</p>
+            <a href="https://full-stack-notify.herokuapp.com/" style="
+                  text-decoration: none;
+                  color: #4070f4;
+                  font-weight: 600;
+                  padding: 3px;
+                  border: 1px solid #4070f4;
+                  width: 100%;
+                  text-align: center;
+                  margin-bottom: 2px;
+                ">Live</a>
+            <a href="https://github.com/pranav589/fullstack-notify.git" style="
+                  text-decoration: none;
+                  color: #4070f4;
+                  font-weight: 600;
+                  padding: 3px;
+                  width: 100%;
+                  text-align: center;
+                  border: 1px solid #4070f4;
+                ">Github</a>
+          </div>
+        </div>
+
+        <div class="work__img">
+          <img src="assets/img/netflix1.png" alt="" />
+
+          <div class="work__links" style="
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+                align-items: center;
+              ">
+            <p style="padding: 5px; color: #4070f4">
+              Netflix Clone with Firebase
+            </p>
+            <a href="https://netflix-a0ab6.web.app/" style="
+                  text-decoration: none;
+                  color: #4070f4;
+                  font-weight: 600;
+                  padding: 3px;
+                  border: 1px solid #4070f4;
+                  width: 100%;
+                  text-align: center;
+                  margin-bottom: 2px;
+                ">Live</a>
+            <a href="https://github.com/pranav589/netflix-clone-using-react.git" style="
+                  text-decoration: none;
+                  color: #4070f4;
+                  font-weight: 600;
+                  padding: 3px;
+                  width: 100%;
+                  text-align: center;
+                  border: 1px solid #4070f4;
+                ">Github</a>
+          </div>
+        </div>
+
+        <div class="work__img">
+          <img src="assets/img/trello.png" alt="" />
+
+          <div class="work__links" style="
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+                align-items: center;
+              ">
+            <p style="padding: 5px; color: #4070f4">Trello Clone</p>
+            <a href="https://trello-ruby.vercel.app/" style="
+                  text-decoration: none;
+                  color: #4070f4;
+                  font-weight: 600;
+                  padding: 3px;
+                  border: 1px solid #4070f4;
+                  width: 100%;
+                  text-align: center;
+                  margin-bottom: 2px;
+                ">Live</a>
+            <a href="https://github.com/pranav589/trello-clone.git" style="
+                  text-decoration: none;
+                  color: #4070f4;
+                  font-weight: 600;
+                  padding: 3px;
+                  width: 100%;
+                  text-align: center;
+                  border: 1px solid #4070f4;
+                ">Github</a>
+          </div>
+        </div>
       </div>
-    </div>
-
-
-    <!-- end of project container -->
-
-    <!-- start of skills container -->
-    <div class="container-section animate__animated animate__slideInDown animate__delay-0.5s wow slideInDown">
-      <div class="heading-section">
-        <h2 class="main-heading">🛠 My skills:</h2>
-
-        <p>These are some of my skills.</p>
-      </div>
-      <div class="skills-container">
-
-        <div class="skills">
-          <p class="skill-icon"> <i class="fab fa-html5"></i></p>
-          <p class="skill">Html</p>
-        </div>
-
-        <div class="skills">
-          <p class="skill-icon"> <i class="fab fa-css3-alt"></i></p>
-          <p class="skill">css</p>
-        </div>
-
-        <div class="skills">
-          <p class="skill-icon"> <i class="fab fa-js-square"></i></p>
-          <p class="skill">js</p>
-        </div>
-
-        <div class="skills">
-          <p class="skill-icon"> <i class="fab fa-react"></i></p>
-          <p class="skill">react</p>
-        </div>
-
-        <div class="skills">
-          <p class="skill-icon"> <i class="fab fa-git-alt"></i></p>
-          <p class="skill">git</p>
-        </div>
-
-        <div class="skills">
-          <p class="skill-icon"> <i class="fab fa-github"></i></p>
-          <p class="skill">github</p>
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- end of skills container -->
-
-    <!-- start contact container -->
-    <div class="container-section  animate__animated animate__zoomIn animate__delay-0.s5 wow zoomIn" id="contact">
-      <div class="heading-section">
-        <h2 class="main-heading">🗯 Connect with me:</h2>
-
-        <p>Let's build awesome things together.</p>
-      </div>
-
-      <div class="contact-links">
-        <a href="https://www.linkedin.com/in/mandeep-singhmar-7b222117a/" target="_blank" class="links">
-          <i class="fab fa-linkedin"></i> Linkedin
-        </a>
-        <a href="https://github.com/Mandeepsinghmar" id="profile-link" target="_blank" class="links">
-          <i class="fab fa-github"></i> Github
-        </a>
-        <a href="https://twitter.com/mandeep_singh_9" target="_blank" class="links">
-          <i class="fab fa-twitter"></i> Twitter
-        </a>
-
-        <a href="mailto:msingh8328@gmail.com" class="links">
-          <i class="fas fa-at"></i> Send a mail
-        </a>
-      </div>
-    </div>
+    </section>
 
     <!--===== CONTACT =====-->
     <section class="contact section" id="contact">
@@ -358,20 +326,24 @@
         </form>
       </div>
     </section>
-    <!-- end of contact container -->
   </main>
-  <footer>
-    <h4>Made with <i id="heart" class="fas fa-heart"></i> in India</h4>
-    <p>© 2020 Mandeep Singhmar. All Right Reserved.</p>
-  </footer>
 
+  <!--===== FOOTER =====-->
+  <footer class="footer">
+    <p class="footer__title">Pranav Bakale</p>
+    <div class="footer__social">
+      <a href="https://www.facebook.com/pranav.bakale" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+      <a href="https://www.instagram.com/pranav_webdev/" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+      <a href="https://twitter.com/Pranavbakale" class="footer__icon"><i class="bx bxl-twitter"></i></a>
+    </div>
+    <p>&#169; 2020 copyright all right reserved</p>
+  </footer>
 
   <!--===== SCROLL REVEAL =====-->
   <script src="https://unpkg.com/scrollreveal"></script>
 
   <!--===== MAIN JS =====-->
   <script src="index.js"></script>
-
 </body>
 
 </html>
