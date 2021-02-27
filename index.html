@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | Mandeep Portfolio</title>
+  <link rel="icon" href="img/favicon.ico" type="image/gif" sizes="16x16">
   <script src="https://kit.fontawesome.com/58688fd07e.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
@@ -39,7 +40,7 @@
   <main>
     <div class="welcome-section">
       <div class="welcome animate__animated animate__animate__fadeInLeft animate__delay-0.9s wow animate__fadeInLeft">
-        <img src="img/mandeep-img2.png" alt="mandeep image">
+        <img class="welcome-img" src=" img/mandeep-img1.png" alt="mandeep image">
         <h1>Mandeep Singhmar</h1>
       </div>
       <div
@@ -74,6 +75,7 @@
             <span class="technology"> <i class="fab fa-html5"></i></span>
             <span class="technology"><i class="fab fa-css3-alt"></i></span>
             <span class="technology"><i class="fab fa-js-square"></i></span>
+            <span class="technology"><i class="fab fa-react"></i></span>
           </div>
 
           <a href="https://covid-tracker-mandeep.netlify.app/" target="_blank">
@@ -341,6 +343,21 @@
         </a>
       </div>
     </div>
+
+    <!--===== CONTACT =====-->
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact__container bd-grid">
+        <form method="POST" class="contact__form" netlify>
+          <input type="text" placeholder="Name" class="contact__input" name='name' />
+          <input type="email" placeholder="Email" class="contact__input" name='email' />
+          <textarea name="" id="" cols="0" rows="10" class="contact__input" placeholder="Your message"
+            name='message'></textarea>
+          <input type="submit" value="Enter" class="contact__button button" />
+        </form>
+      </div>
+    </section>
     <!-- end of contact container -->
   </main>
   <footer>
@@ -349,9 +366,11 @@
   </footer>
 
 
-  <!-- <script>
-      new WOW().init();
-      </script> -->
+  <!--===== SCROLL REVEAL =====-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--===== MAIN JS =====-->
+  <script src="index.js"></script>
 
 </body>
 
