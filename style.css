@@ -381,6 +381,17 @@ img {
 .work__desc {
   padding: 0.3rem 0.5rem;
 }
+.mongodb-img {
+  display: inline;
+  max-width: 30px;
+  max-height: 30px;
+}
+.express-img {
+  display: inline;
+  max-width: 25px;
+  max-height: 25px;
+  border-radius: 50%;
+}
 
 /* ===== CONTACT =====*/
 .contact__input {
