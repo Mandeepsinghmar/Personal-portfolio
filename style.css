@@ -9,7 +9,7 @@
 /*===== Colores =====*/
 :root {
   --first-color: #4070f4;
-  --second-color: #0e2431;
+  --second-color: #fff5ff;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -59,7 +59,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
-  background-color: #fff5ff;
+  background-color: #0e2431;
 }
 h1,
 h2,
@@ -121,8 +121,8 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  background-color: #0e2431;
+  box-shadow: 0 1px 1px rgba(146, 161, 176, 0.15);
 }
 
 /*===== NAV =====*/
@@ -132,6 +132,8 @@ img {
   justify-content: space-between;
   align-items: center;
   font-weight: var(--font-semi);
+  background-color:#0e2431;
+
 }
 @media screen and (max-width: 768px) {
   .nav__menu {
@@ -141,7 +143,7 @@ img {
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: var(--second-color);
+    background-color:#0e2431;
     transition: 0.5s;
   }
 }
@@ -167,6 +169,7 @@ img {
 .nav__logo {
   color: var(--second-color);
 }
+
 .nav__toggle {
   color: var(--second-color);
   font-size: 1.5rem;
@@ -381,6 +384,7 @@ img {
 }
 .work__desc {
   padding: 0.3rem 0.5rem;
+  color: #0e2431;
 }
 .mongodb-img {
   display: inline;
@@ -416,7 +420,9 @@ img {
 
 /* ===== FOOTER =====*/
 .footer {
-  background-color: var(--second-color);
+  background-color: #0e2431;
+  border-top: 1px solid rgba(146, 161, 176, 0.15);
+
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
